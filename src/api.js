@@ -1,16 +1,11 @@
 import axios from "axios";
+const API_KEY = "3e662e2c4fbbd41de26dd371a295f7e7";
 
 const api = axios.create({
   baseURL: "https://api.themoviedb.org/3/",
   params: {
-    api_key: "3e662e2c4fbbd41de26dd371a295f7e7",
+    api_key: API_KEY,
     language: "en-US"
-  }
-});
-
-api.get("tv/popular", {
-  params: {
-    api_key: "3e662e2c4fbbd41de26dd371a295f7e7"
   }
 });
 
