@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -11,7 +11,7 @@ const Image = styled.div`
   background-image: url(${(props) => props.bgUrl});
   height: 180px;
   background-size: cover;
-  border-radius: 4px;
+  border-radius: 5px;
   background-position: center center;
   transition: opacity 0.1s linear;
 `;
@@ -24,12 +24,42 @@ const Rating = styled.span`
   transition: opacity 0.1s linear;
 `;
 
+const bounceEffect = keyframes`
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+  }
+  72% {
+    transform: translateY(0);
+  }
+  81% {
+   transform: translateY(-28px);
+  }
+  90% {
+   transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 const ImageContainer = styled.div`
   margin-bottom: 5px;
   position: relative;
   &:hover {
     ${Image} {
-      opacity: 0.3;
+      opacity: 0.5;
+      animation: ${bounceEffect} 1s ease-in-out;
     }
     ${Rating} {
       opacity: 1;
