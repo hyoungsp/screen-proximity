@@ -8,6 +8,7 @@ const Container = styled.div`
   color: ${({ theme: { theme } }) => theme.loader};
   justify-content: center;
   font-size: 30px;
+  margin-top: 50px;
 `;
 
 export default () => (

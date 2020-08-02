@@ -87,9 +87,9 @@ export default withRouter(({ location: { pathname } }) => {
     <Header>
       <List>
         <Theme>
-          <ButtonLabel>Dark Mode</ButtonLabel>
+          <ButtonLabel>Mood</ButtonLabel>
           <Button onClick={toggleTheme}>
-            <span>{theme === light ? "ON" : "OFF"}</span>
+            <span>{theme === light ? "🌞" : "🌙"}</span>
           </Button>
         </Theme>
         <Item>
