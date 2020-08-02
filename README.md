@@ -2,6 +2,8 @@
 
 ## Movie and TV Shows Interactive Web App
 
+![Alt text](./src/assets/Screen-Proximity.png)
+
 ## Tech Stack
 
 - [ ] React / React Hooks
