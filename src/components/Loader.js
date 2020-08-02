@@ -5,6 +5,7 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
+  color: ${({ theme: { theme } }) => theme.loader};
   justify-content: center;
   font-size: 30px;
 `;
