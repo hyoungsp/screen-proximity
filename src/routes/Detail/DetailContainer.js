@@ -12,9 +12,45 @@ export default class extends React.Component {
       result: null,
       error: null,
       loading: true,
-      isMovie: pathname.includes("/movie/")
+      isMovie: pathname.includes("/movie/"),
+      videos: false,
+      production_companies: false,
+      production_countries: false,
+      spoken_languages: false,
+      seasons: false,
+      origin_country: false
     };
   }
+
+  toggleVideos = () => {
+    this.setState({
+      videos: true
+    });
+  };
+
+  toggleCompanies = () => {
+    this.setState({
+      production_companies: true
+    });
+  };
+
+  toggleCountries = () => {
+    this.setState({
+      production_countries: true
+    });
+  };
+
+  toggleLanguages = () => {
+    this.setState({
+      spoken_languages: true
+    });
+  };
+
+  toggleSeasons = () => {
+    this.setState({
+      seasons: true
+    });
+  };
 
   async componentDidMount() {
     const {
@@ -43,7 +79,37 @@ export default class extends React.Component {
   }
 
   render() {
-    const { result, error, loading } = this.state;
-    return <DetailPresenter result={result} error={error} loading={loading} />;
+    const {
+      result,
+      isMovie,
+      error,
+      loading,
+      videos,
+      production_companies,
+      production_countries,
+      spoken_languages,
+      seasons,
+      origin_country
+    } = this.state;
+    return (
+      <DetailPresenter
+        result={result}
+        isMovie={isMovie}
+        error={error}
+        loading={loading}
+        videos={videos}
+        production_companies={production_companies}
+        production_countries={production_countries}
+        spoken_languages={spoken_languages}
+        seasons={seasons}
+        origin_country={origin_country}
+        toggleCountries={this.toggleCountries}
+        toggleCompanies={this.toggleCompanies}
+        toggleVideos={this.toggleVideos}
+        toggleLanguages={this.toggleLanguages}
+        toggleSeasons={this.toggleSeasons}
+        toggleOriginCountry={this.toggleOriginCountry}
+      />
+    );
   }
 }
