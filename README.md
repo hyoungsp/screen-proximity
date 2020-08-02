@@ -6,9 +6,9 @@
 
 ## Tech Stack
 
-- [ ] React / React Hooks
-- [ ] Container - Presenter structure
-- [ ] Styled Components
-- [ ] React Helmet/Dom-Router
+- [ x ] React / React Hooks
+- [ x ] Container - Presenter structure
+- [ x ] Styled Components
+- [ x ] React Helmet/Dom-Router
 
 ## Netlify Address: https://optimistic-austin-b61c31.netlify.app/
