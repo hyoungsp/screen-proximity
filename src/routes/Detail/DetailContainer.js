@@ -24,31 +24,67 @@ export default class extends React.Component {
 
   toggleVideos = () => {
     this.setState({
-      videos: true
+      videos: true,
+      production_companies: false,
+      production_countries: false,
+      spoken_languages: false,
+      seasons: false,
+      origin_country: false
     });
   };
 
   toggleCompanies = () => {
     this.setState({
-      production_companies: true
+      videos: false,
+      production_companies: true,
+      production_countries: false,
+      spoken_languages: false,
+      seasons: false,
+      origin_country: false
     });
   };
 
   toggleCountries = () => {
     this.setState({
-      production_countries: true
+      videos: false,
+      production_companies: false,
+      production_countries: true,
+      spoken_languages: false,
+      seasons: false,
+      origin_country: false
     });
   };
 
   toggleLanguages = () => {
     this.setState({
-      spoken_languages: true
+      videos: false,
+      production_companies: false,
+      production_countries: false,
+      spoken_languages: true,
+      seasons: false,
+      origin_country: false
     });
   };
 
   toggleSeasons = () => {
     this.setState({
-      seasons: true
+      videos: false,
+      production_companies: false,
+      production_countries: false,
+      spoken_languages: false,
+      seasons: true,
+      origin_country: false
+    });
+  };
+
+  toggleOriginCountry = () => {
+    this.setState({
+      videos: false,
+      production_companies: false,
+      production_countries: false,
+      spoken_languages: false,
+      seasons: false,
+      origin_country: true
     });
   };
 
