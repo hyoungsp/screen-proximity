@@ -1,16 +1,12 @@
-## Screen Proximity
+# Screen Proximity
 
-## Screens
+## Movie and TV Shows Interactive Web App
 
-- [ ] Home
-- [ ] TV Shows
-- [ ] Search
-- [ ] Detail
+## Tech Stack
 
-## API
+- [ ] React / React Hooks
+- [ ] Container - Presenter structure
+- [ ] Styled Components
+- [ ] React Helmet/Dom-Router
 
-- Now Playing (Movie)
-- Top Rated (TV and Movie)
-- Popular (TV and Movie)
-- Upcoming (Movie)
-- Air Today (TV)
+## Netlify Address:
